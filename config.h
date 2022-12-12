@@ -135,6 +135,8 @@ static const Key keys[] = {
 	{ NULL,				XF86XK_AudioPrev,		spawn,		{.v = prev_media} },
 	{ NULL,				XF86XK_MonBrightnessUp,		spawn,		{.v = inc_brightness} },
 	{ NULL,				XF86XK_MonBrightnessDown,	spawn,		{.v = dec_brightness} },
+	{ MODKEY|ShiftMask,     	XK_F8,              		spawn,      	{.v = inc_brightness} },
+	{ MODKEY|ShiftMask,     	XK_F7,              		spawn,      	{.v = dec_brightness} },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
